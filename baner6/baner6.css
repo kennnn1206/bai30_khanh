@@ -1,0 +1,65 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-baner6 {
+    background-image: url(background1.jpg);
+    /* height: 521px; */
+    height: 850px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.backgroundimg{
+    width: 213px;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    top: 9%;
+    left: 45%;
+}
+.backgroundimg1{
+    width: 684px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    top: 70%;
+    left: 55%;
+}
+.backgroundimg2{
+    width: 184px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+   top: 0;
+    right: 0;
+}
+.container-baner6 h1:hover{
+    transform: scale(1.1);
+}
+
+.container-baner6 h2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .container-baner6 h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+  }
+  
+  .container-baner6 h2:hover::after {
+    transform: scaleX(1);
+  }
